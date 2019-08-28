@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/stylesmap.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="menu-icon">
+                    <i class="glyphicon glyphicon-align-justify" style="font-size:36px"></i>
+                </div>
+                <div class="logo">
+                    LOGO
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="prodotti.html">Prodotti</a>
+                        </li>
+                        <li>
+                            <a href="#">Negozio</a>
+                        </li>
+                        <li>
+                            <a href="contact.html">Contatti</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            
+                <div style="text-align:center">
+                  <h2>Contattaci</h2>
+                  <p>Per ulteriori informazioni, preventivi. (n. 095xxxxxx) </p>
+                </div>
+                <div class="row">
+                  <div class="column">
+                    <div class="google-maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2785.512370001387!2d14.937377914883866!3d37.627301228404235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1311540a7d78f221%3A0x4bbb054586d13bbf!2sEtna+Dolce+S.R.L.!5e1!3m2!1sit!2sit!4v1527431381297" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <form action="/action_page.php">
+                      <label for="fname">First Name</label>
+                      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                      <label for="lname">Last Name</label>
+                      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                      <label for="country">Regione</label>
+                      <select id="country" name="country">
+                        <option value="abruzzo">Abruzzo</option>
+                        <option value="basilicata">Basilicata</option>
+                        <option value="calabria">Calabria</option>
+                        <option value="campania">Campania</option>
+                        <option value="emilia">Emilia Romagna</option>
+                        <option value="friuli">Friuli-Venezia Giulia</option>
+                        <option value="lazio">Lazio</option>
+                        <option value="liguria">Liguria</option>
+                        <option value="lombardia">Lombardia</option>
+                        <option value="marche">Marche</option>
+                        <option value="molise">Piemonte</option>
+                        <option value="puglia">Puglia</option>
+                        <option value="sardegna">Sardegna</option>
+                        <option value="sicilia">Sicilia</option>
+                        <option value="toscana">Toscana</option>
+                        <option value="trentino">Trentino-Alto Adige</option>
+                        <option value="umbria">Umbria</option>
+                        <option value="valledaosta">Valle d'Aosta</option>
+                        <option value="Veneto">Veneto</option>
+                        <option value="altro">Altro (specificare)</option>
+
+                      </select>
+                      <label for="subject">Subject</label>
+                      <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                      <input type="submit" value="Submit">
+                    </form>
+                  </div>
+                </div>
+              
+              
+             
+        </div>
+    </div>
+
+    <footer id="sticky"><p>© Danilo Leocata <a href="https://www.linkedin.com/in/danilo-leocata-3a76a915b/">LinkedIn</a></a></p></footer>
+
+    <script type="text/javascript">
+
+        //menu toggle-nutton
+        $(document).ready(function () {
+            $(".menu-icon").on("click", function () {
+                $("nav ul").toggleClass("showing");
+            });
+        });
+
+        //scrolling effect
+
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('black');
+            }
+            else {
+                $('nav').removeClass('black');
+            }
+        })
+
+    </script>
+
+</body>
+
+</html>
